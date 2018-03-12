@@ -18,7 +18,7 @@ var EmptyCircuitKey CircuitKey
 // HTLCs in a circuit. Circuits are identified primarily by the circuit key of
 // the incoming HTLC. However, a circuit may also be referenced by its outgoing
 // circuit key after the HTLC has been forwarded via the outgoing link.
-type CircuitKey = channeldb.CircuitKey
+type CircuitKey channeldb.CircuitKey
 
 // PaymentCircuit is used by the switch as placeholder between when the
 // switch makes a forwarding decision and the outgoing link determines the
